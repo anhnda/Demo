@@ -8,4 +8,4 @@ git add .
 # We use "$MESSAGE" in quotes to handle spaces correctly
 git commit -m "$MESSAGE"
 
-git push origin dev
+git push origin dev2
