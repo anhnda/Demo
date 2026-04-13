@@ -1,3 +1,11 @@
+#!/bin/bash
+
+# Assign $1 to MESSAGE, or "Update" if $1 is empty
+MESSAGE=${1:-Update}
+
 git add .
-git commit -m "Update"
+
+# We use "$MESSAGE" in quotes to handle spaces correctly
+git commit -m "$MESSAGE"
+
 git push origin dev
